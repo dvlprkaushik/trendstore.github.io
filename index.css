@@ -51,7 +51,7 @@ a{
     padding-right: 1.5rem;
 }
 
-h1{
+.top-head{
     color: #121212;
     font-family: Poppins;
     font-weight: 400 regular;
@@ -203,6 +203,10 @@ padding: 1rem 0;
     color: #272728;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.col-2 .b-name{
+    font-family: poppins;
 }
 
 .col-2 .offer-img{
@@ -377,9 +381,15 @@ ul{
     visibility: hidden;
 }
 
+
 /*---------MEDIA QUERY FOR MENU------------*/
 
 @media only screen and (max-width: 800px){
+
+    .header{
+        background: rgb(34,159,195);
+        background: linear-gradient(310deg, rgba(34,159,195,1) 0%, rgba(206,146,255,1) 100%);
+    }
 
     nav ul{
         position: absolute;
@@ -407,6 +417,18 @@ ul{
         cursor: pointer;
         visibility: visible;
     }
+
+    .row .col-2 .top-head{
+        margin-top: 120px;
+        font-size: 3rem;
+    }
+
+    .footer .copyright{
+        text-align: center;
+        color: #121212;
+        font-family: poppins;
+        font-size: 0.8rem;
+    }
 }
 
 /*----------MEDIA QUERY FOR less than 600 screen size-------------*/
@@ -419,5 +441,48 @@ ul{
 
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
+    }
+
+    .testimonial .rating .fa-solid{
+        padding: 0.1rem;
+    }
+
+    .col-2 .exu,.b-name{
+        color: #272728;
+    }
+
+    .col-2 .b-name{
+        font-family: poppins;
+        font-size: 2.2rem;
+    }
+
+    .row .col-2 .top-head{
+        margin-top: 100px;
+        font-size: 3rem;
+    }
+
+    .header{
+        background: rgb(191, 87, 255);
+        background: linear-gradient(19deg, rgb(87, 255, 182) 0%, rgba(210,213,255,1) 56%, rgb(195, 146, 255) 100%);
+    }
+
+    .col-5 img{
+        width: 70%;
+    }
+    
+    .col-5 .extra{
+        width: 40%;
+    }
+
+    .row .col-2 .para{
+        font-size: 0.9rem;
+        color:rgb(83, 83, 83);
+    }
+
+    .footer .copyright{
+        text-align: center;
+        color: #121212;
+        font-family: poppins;
+        font-size: 0.7rem;
     }
 }
